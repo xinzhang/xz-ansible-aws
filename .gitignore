@@ -1,2 +1,6 @@
 setup-iam-access.sh
 references
+references/**
+**/*.pem
+**/*.retry'
+keys
