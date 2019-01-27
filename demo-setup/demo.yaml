@@ -12,7 +12,7 @@
         instance_type: t3.micro
         image: "ami-6d1c2007"
         wait: true
-        exact_count: 2
+        exact_count: 1
         count_tag:
           Name: Demo
         instance_tags:
@@ -22,3 +22,5 @@
     - name: Add all instance public IPs to host group
       add_host: hostname={{ item.public_ip }} groups=ec2hosts
       loop: "{{ ec2.instances }}"
+
+      
