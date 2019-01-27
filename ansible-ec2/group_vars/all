@@ -1,0 +1,20 @@
+# EC2 instance variable
+
+ec2:
+  region: ap-southeast-2
+  credentials: ansible-keys
+  image: ami-0e2b2114bf2fac7d8
+  sg: default
+  instance_type: t2.micro
+  subnet: subnet-0ce48568
+  public_ip: yes
+  tags:
+    Name: Ec2Ansible
+  volumes:
+    - device_name: /dev/xvda
+      volume_type: standard
+      volume_size: 8
+  
+
+
+

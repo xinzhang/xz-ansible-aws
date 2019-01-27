@@ -1,0 +1,8 @@
+---
+- hosts: dev
+  gather_facts: False
+  remote_user: ec2-user
+
+  tasks:
+    - name: ping
+      ping:

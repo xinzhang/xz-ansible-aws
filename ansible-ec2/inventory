@@ -1,0 +1,5 @@
+[dev:vars]
+ansible_ssh_private_key_file=./ansible-keys.pem
+
+[dev]
+54.206.45.59
